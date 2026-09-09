@@ -43,21 +43,35 @@ Useful parameters include:
 * Vmin: minimum desired attraction value  
 * K: minimum number of attractions to visit
 
-# **5\. Objective Function**
+# **5. Objective Function**
 
 Primary objective: minimize total travel cost.
 
-**Minimize  Z \= $\sum\limits_{i}^{}$$\sum\limits_{j}^{}$cij yij**
+**Minimize**
+
+$$
+Z = \sum_{i}\sum_{j} c_{ij} y_{ij}
+$$
 
 This asks for the selection and ordering of attractions that produces the lowest total travel cost. If both money and travel time are explicitly valued in the objective, a weighted objective can be used:
 
-**Minimize  Z \= 𝛼(∑cij yij) \+ 𝛃(∑tij yij)**
+**Minimize**
+
+$$
+Z = \alpha \left(\sum_{i}\sum_{j} c_{ij} y_{ij}\right) + \beta \left(\sum_{i}\sum_{j} t_{ij} y_{ij}\right)
+$$
 
 A minimum visitation requirement is necessary. Two common choices are:
 
-**$\sum\limits_{i}^{}$xi \>= K  (visit at least K attractions)**
+$$
+\sum_{i} x_i \geq K
+\qquad \text{(visit at least \(K\) attractions)}
+$$
 
-**$\sum\limits_{i}^{}$vi xi \>= Vmin  (achieve at least a target sightseeing value)**
+$$
+\sum_{i} v_i x_i \geq V_{\min}
+\qquad \text{(achieve at least a target sightseeing value)}
+$$
 
 # **6\. Main Constraints**
 
@@ -97,19 +111,39 @@ The number of possible visit sequences grows rapidly. Even if 10 attractions are
 
 Adding an attraction may improve the sightseeing experience but require additional driving, fuel, tolls, or lodging. The optimal itinerary balances this additional value against the additional resource use. Although the final mathematical model can use one cost-minimization objective, the underlying planning problem is naturally multi-objective.
 
-# **10\. Recommended Formulation**
+# **10. Recommended Formulation**
 
 A clean formulation for the stated objective is:
 
-**Objective:** Minimize  **$\sum\limits_{i}^{}$$\sum\limits_{j}^{}$** cij yij
+**Objective:**
 
-**Attraction value: $\sum\limits_{i}^{}$** vi xi \>= Vmin
+$$
+\min Z = \sum_{i}\sum_{j} c_{ij} y_{ij}
+$$
 
-**Available time:$\sum\limits_{i}^{}$**si xi \+ **$\sum\limits_{i}^{}$$\sum\limits_{j}^{}$**tij yij \<= T
+**Attraction value:**
 
-**Budget: $\sum\limits_{i}^{}$$\sum\limits_{j}^{}$** cij yij \<= B
+$$
+\sum_{i} v_i x_i \geq V_{\min}
+$$
 
-**Decision variables:** xi, yij in {0,1}
+**Available time:**
+
+$$
+\sum_{i} s_i x_i + \sum_{i}\sum_{j} t_{ij} y_{ij} \leq T
+$$
+
+**Budget:**
+
+$$
+\sum_{i}\sum_{j} c_{ij} y_{ij} \leq B
+$$
+
+**Decision variables:**
+
+$$
+x_i, y_{ij} \in \{0,1\}
+$$
 
 These constraints are supplemented by start/end, route-continuity, visit, and subtour-elimination constraints. In words, the model determines which attractions to visit and the order in which to visit them so that total travel cost is minimized while achieving a desired amount of sightseeing and satisfying time, budget, and routing requirements.
 
