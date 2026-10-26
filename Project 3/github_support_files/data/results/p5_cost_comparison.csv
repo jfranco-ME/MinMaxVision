@@ -1,0 +1,5 @@
+method,scope,setup_or_training_s,query_or_solve_ms,notes
+Finite difference baseline,Solve first 10 eigenstates at N=1000,0.0,4.121478,Returns 10 eigenvalues and 10 wavefunctions in one conventional solve.
+PINN,Train one eigenstate (median across 24 P3 runs),19.30956325000011,,One PINN is trained per target eigenstate/problem instance.
+PINN inference,Evaluate one trained n=10 architecture on 1002 x-points,19.30956325000011,0.6201885,Architecture-equivalent timing; saved P3 runs did not retain model checkpoints.
+10 PINN inferences,Evaluate ten separately trained architectures n=1..10 on 1002 x-points,193.0956325000011,4.1510575,Requires ten already-trained models; not a single multi-output PINO.

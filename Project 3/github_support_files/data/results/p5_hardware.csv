@@ -1,0 +1,2 @@
+cpu,machine,python,torch,scipy,cuda_available,torch_threads_for_benchmark,logical_cpus_visible,fd_grid_interior_points,fd_states_returned,pinn_architecture,pinn_eval_points
+INTEL(R) XEON(R) PLATINUM 8573C,x86_64,3.13.5,2.10.0+cpu,1.17.0,False,1,9,1000,10,1-32-32-1 tanh; hard BC; projection; internal normalization,1002
