@@ -1,3 +1,5 @@
+# Initial Outreach
+
 Hello Dr. Zhuang,
 
 I hope you are well. I'm Kyle Swirski, and I spoke to you after class last week about interviewing you for my team's current project in our Design Optimization course (MAE494) here at ASU. Said project tasks us with learning how professors and researchers at ASU use PDE-based models, and whether new methods such as physics-informed neural networks (PINNs) could be of use to them for any computational challenges they have.
