@@ -1,5 +1,3 @@
-The initial email sent to Dr. Zhuang is below.
-
 Hello Dr. Zhuang,
 
 I hope you are well. I'm Kyle Swirski, and I spoke to you after class last week about interviewing you for my team's current project in our Design Optimization course (MAE494) here at ASU. Said project tasks us with learning how professors and researchers at ASU use PDE-based models, and whether new methods such as physics-informed neural networks (PINNs) could be of use to them for any computational challenges they have.
@@ -10,5 +8,3 @@ Would you have 30 minutes this week for a short interview about the project, on 
 
 Thank you for offering to interview for our project.
 - Kyle Swirsk, grouped with Noah Hing, Joseph Franco, and Christopher Sandoval, in MAE494
-
-After not receiving a response for over a week, I decided to ask him after class if we could conduct the interview in person during office hours, and he obliged.
