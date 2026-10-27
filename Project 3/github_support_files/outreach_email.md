@@ -9,4 +9,4 @@ I've started reading the articles you've published on quantum computing and its 
 Would you have 30 minutes this week for a short interview about the project, on Zoom or in person? My group and I will share our results with you, and will keep everything confidential throughout the process. Should you be available for the interview, we can conduct it at any time and date that works well for you.
 
 Thank you for offering to interview for our project.
-- Kyle Swirsk, grouped with Noah Hing, Joseph Franco, and Christopher Sandoval, in MAE494
+From Kyle Swirsk, grouped with Noah Hing, Joseph Franco, and Christopher Sandoval, in MAE494.
