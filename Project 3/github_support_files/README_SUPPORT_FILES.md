@@ -10,5 +10,3 @@ The central design principle is:
 - **`data/results/`** stores compact raw/summary results.
 - **`data/solutions/`** stores per-run wavefunctions when experiments are rerun.
 - **`figures/`** stores report graphics.
-
-See `README_UPLOAD_GUIDE.md` for upload instructions.
